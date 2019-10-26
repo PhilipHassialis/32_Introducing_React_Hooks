@@ -4,6 +4,7 @@ import useToggle from "./hooks/useToggle";
 export default function Toggler() {
     const [isHappy, toggleIsHappy] = useToggle(true);
     const [isHeartbroken, toggleIsHeartbroken] = useToggle(false);
+    const [isBanana, toggleIsBanana] = useToggle(false);
 
     return (
         <div>
@@ -15,6 +16,9 @@ export default function Toggler() {
                 onClick={() => toggleIsHeartbroken()}
             >
                 {isHeartbroken ? "💔" : "💖"}
+            </h1>
+            <h1 style={{ userSelect: "none" }} onClick={() => toggleIsBanana()}>
+                {isBanana ? "🍌" : "🍎"}
             </h1>
         </div>
     );
