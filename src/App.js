@@ -5,15 +5,17 @@ import Toggler from "./Toggler";
 import SimpleFormHooks from "./SimpleFormHooks";
 import SimpleFormInputHook from "./SimpleFormInputHook";
 import Clicker from "./Clicker";
+import SWMovies from "./SWMovies";
 
 function App() {
     return (
         <div className="App">
-            <CounterHooks />
+            {/* <CounterHooks />
             <Toggler></Toggler>
             <SimpleFormHooks />
             <SimpleFormInputHook />
-            <Clicker />
+            <Clicker /> */}
+            <SWMovies />
         </div>
     );
 }
